@@ -1,0 +1,54 @@
+body{
+    font-family: 'Inter';
+    color: #151515;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+section{
+
+    overflow: hidden;
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+    padding: 50px;
+}
+.photo{
+    width: 100%;
+}
+img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+header{
+    background: #55CC95;
+}
+.photo{
+    background: yellow;
+}
+.name{
+    background: gold;
+}
+.info{
+    background: green;
+}
+.box-container{
+    display: flex;
+}
+.box{
+    width: 33%;
+    height: 200px;
+    border: 2px solid red;
+}
+a{
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    color: red;
+}
+ul{
+    list-style: none;
+}
