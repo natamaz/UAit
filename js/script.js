@@ -74,3 +74,111 @@ alert( isGreater );
 
 let name;
 alert(name); // выведет "undefined"
+
+
+
+
+
+
+
+
+
+
+// -1, унарный
+let x = 1;
+x = -x;
+alert( x );
+
+
+// 1, бинарный минус вычитает значения
+let x = 1;
+let y = 2;
+alert( y - x );
+
+
+
+// Складываем числа и получаем результат 3
+let x = 1;
+let y = 2;
+alert( y + x );
+
+// Складываем строки и получаем результат Hi guyz
+let x = 'Hi';
+let y = 'guys';
+alert( y + x );
+
+
+// Складываем строку и число результат 1Hi
+let x = 'Hi';
+let y = 1;
+alert( y + x );
+
+
+
+
+// результат "12", так как бинарный плюс объединяет строки
+let natalia = "1";
+let olja = "2";
+alert( natalia + olja );
+
+
+// результат "3",  т.к. оба операнда  преобразованы в числа
+let natalia = "1";
+let olja = "2";
+alert( +natalia + +olja );
+
+
+// результат "5"
+let x = 2 * 2 + 1;
+alert( x );
+
+
+
+// результат "3"
+let counter = 2;
+counter++;
+alert( counter );
+
+
+// результат "1"
+let counter = 2;
+counter--;
+alert( counter );
+
+
+// true
+alert( 2 > 1 );
+
+// false
+alert( 2 == 1 );
+
+
+// результат сравнения присваивается переменной result
+let result = 1 == 1;
+// true
+alert( result );
+
+
+
+
+alert( 'Я' > 'А' ); // true
+alert( 'Дом' > 'Дог' ); // true
+alert( 'Сонный' > 'Сон' ); // true
+
+
+// true, строка '1' становится числом 1
+alert( '1' > 0 );
+
+
+// Вернет Да
+let name = prompt('Как меня зовут?', '');
+if (name == 'Natalia') alert( 'Да' );
+
+
+
+let name = prompt('Как меня зовут?', '');
+if (name == 'Natalia') {
+    alert( 'Да!' );
+} else {
+    alert( 'Нет' );
+}
