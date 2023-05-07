@@ -164,9 +164,57 @@
 // console.log(!(a > 0));
 
 
-let user;
-alert(user ?? "Аноним"); // Аноним (user не существует)
+// let user;
+// alert(user ?? "Аноним"); // Аноним (user не существует)
+//
+//
+// let user = "Иван";
+// alert(user ?? "Аноним"); // Иван (user существует)
 
 
-let user = "Иван";
-alert(user ?? "Аноним"); // Иван (user существует)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function sum(a, b) {
+    return a + b;
+}
+
+let result = sum(1, 2);
+alert( result ); // 3
+
+
+
