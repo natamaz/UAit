@@ -180,47 +180,10 @@
 
 
 
-
-
-
-
 let age = prompt("Сколько Вам лет?", 18);
 
-let welcome;
+let welcome = (age < 18) ?
+    () => alert('Привет!') :
+    () => alert("Здравствуйте!");
 
-if (age < 18) {
-
-    welcome = function() {
-        alert("Привет!");
-    };
-
-} else {
-
-    welcome = function() {
-        alert("Здравствуйте!");
-    };
-
-}
-
-welcome(); // теперь всё в порядке
-
-
-// let age = prompt("Сколько Вам лет?", 18);
-//
-// // в зависимости от условия объявляем функцию
-// if (age < 18) {
-//
-//     function welcome() {
-//         alert("Привет!");
-//     }
-//
-// } else {
-//
-//     function welcome() {
-//         alert("Здравствуйте!");
-//     }
-//
-// }
-//
-// // ...не работает
-// welcome(); // Error: welcome is not defined
+welcome();
