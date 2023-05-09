@@ -169,7 +169,7 @@
 //
 //
 // let user = "Иван";
-// alert(user ?? "Аноним"); // Иван (user существует)
+// alert(user ?? "Аноним"); // Иван (user существу
 
 
 
@@ -184,37 +184,43 @@
 
 
 
+let age = prompt("Сколько Вам лет?", 18);
 
+let welcome;
 
+if (age < 18) {
 
+    welcome = function() {
+        alert("Привет!");
+    };
 
+} else {
 
+    welcome = function() {
+        alert("Здравствуйте!");
+    };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function sum(a, b) {
-    return a + b;
 }
 
-let result = sum(1, 2);
-alert( result ); // 3
+welcome(); // теперь всё в порядке
 
 
-
+// let age = prompt("Сколько Вам лет?", 18);
+//
+// // в зависимости от условия объявляем функцию
+// if (age < 18) {
+//
+//     function welcome() {
+//         alert("Привет!");
+//     }
+//
+// } else {
+//
+//     function welcome() {
+//         alert("Здравствуйте!");
+//     }
+//
+// }
+//
+// // ...не работает
+// welcome(); // Error: welcome is not defined
