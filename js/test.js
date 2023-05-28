@@ -477,3 +477,177 @@
 // alert(user.name);
 // alert(user.canView);
 // alert(user.canEdit);
+
+
+
+
+//
+// let user = {
+//     name: "Natalia",
+//     age: 36,
+//     "like vine": true
+//
+//
+// };
+// alert(user["like vine"]);
+// alert(user.age);
+
+
+//
+// const user = {
+//     name: "Natalia"
+// }
+// user.name = "Vika";
+// alert(user.name)
+
+
+
+
+
+//
+// let fruit = prompt('Что купить?', "");
+// let bag = {
+//     [fruit]:5,
+// };
+// alert(bag.apple);
+
+
+
+
+
+
+
+// function makeUser(name, age){
+//     return{
+//         name,
+//         age
+//     };
+// }
+//
+//
+// let user = makeUser('Natalia', 36);
+// alert(user.name)
+// alert(user.age)
+
+
+
+
+// let user = {
+//     name: "Natalia",
+//     age: 36,
+//
+// }
+// alert(user.FName === undefined);
+
+
+
+
+//
+// let user = {
+//     name: "Natalia",
+//     age: 36
+// }
+// alert("FName" in user);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+// let user = {
+//     name:"Natalia",
+//     age:36,
+//     isAdmin:true
+// }
+// for(let key in user){
+//     alert(key);
+//     alert(user[key]);
+// }
+
+
+
+
+
+
+// let message = 'Hello';
+// let message2 = message;
+// alert(message);
+// alert(message2)
+
+
+//
+// let user = {
+//     name: "Natalia"
+// }
+//
+//
+//
+// let admin = user;
+// admin.name = 'Vika';
+// alert(user.name)
+//
+//
+//
+// let admin2 = user;
+// admin2.name = 'Anna';
+// alert(user.name)
+
+
+
+
+
+//
+//
+// let user = {
+//     name:"Natalia",
+//     age:36
+// }
+// let clone = {};
+// for(let key in user){
+//     clone[key] = user[key];
+// }
+// clone.name = "Vika";
+// alert(user.name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+let user = {
+    name: "Natalia"
+}
+let pers1 = {
+    age:36
+}
+let pers2 = {
+    isAdmin: true
+}
+
+Object.assign(user, pers1, pers2);
+alert(user.name);
+alert(user.age)
+alert(user.isAdmin)
+
+
+
+
+
+
+
