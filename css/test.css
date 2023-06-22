@@ -52,3 +52,69 @@ a{
 ul{
     list-style: none;
 }
+.wrapper {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.tabs-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.tabs-nav__item {
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    flex: 1;
+    padding: 20px;
+}
+
+.tabs-nav__item.is-active {
+    border-color: #55a32a;
+}
+
+.tab {
+    background-color: #f2f2f2;
+    display: none;
+    padding: 20px;
+}
+.tab.is-active { display: block; }
+
+
+
+
+
+/* Модальный (фон) */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    padding-top: 100px; /* Расположение коробки */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант  */
+    background-color: rgba(0,0,0,0.4); /*Черный с непрозрачностью */
+}
+
+/* Кнопка закрытия */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content{
+    height: 300px;
+    width: 300px;
+    background: aqua;
+    margin: 0 auto;
+}

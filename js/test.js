@@ -629,21 +629,130 @@
 
 
 
+//
+// let user = {
+//     name: "Natalia"
+// }
+// let pers1 = {
+//     age:36
+// }
+// let pers2 = {
+//     isAdmin: true
+// }
+//
+// Object.assign(user, pers1, pers2);
+// alert(user.name);
+// alert(user.age)
+// alert(user.isAdmin)
 
-let user = {
-    name: "Natalia"
-}
-let pers1 = {
-    age:36
-}
-let pers2 = {
-    isAdmin: true
-}
 
-Object.assign(user, pers1, pers2);
-alert(user.name);
-alert(user.age)
-alert(user.isAdmin)
+
+
+// function makeWorker() {
+//     let name = "Pete";
+//
+//     return function() {
+//         alert(name);
+//     };
+// }
+//
+// let name = "John";
+//
+// // create a function
+// let work = makeWorker();
+//
+// // call it
+// work();
+
+//
+//
+// let tab = function (){
+//     let tabNav = document.querySelectorAll('.tabs-nav__item'),
+//     tabContent = document.querySelectorAll('.tab'),
+//     tabName;
+//     tabNav.forEach(item => {
+//         item.addEventListener('click', selectTabNav)
+//     });
+//     function selectTabNav(){
+//         tabNav.forEach(item => {
+//             item.classList.remove('is-active')
+//         });
+//         this.classList.add('is-active');
+//         tabName = this.getAttribute('data-name');
+//         selectTabContent(tabName);
+//
+//     }
+//     function selectTabContent(tabName){
+//         tabContent.forEach(item => {
+//             item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active')
+//         })
+//     }
+// }
+//
+//
+// tab();
+//
+//
+//
+//
+//
+//
+// let filter = function (){
+//     let input = document.getElementById('filter-input');
+//     input.addEventListener('keyup',function (){
+//         let filter = input.value.toLowerCase(),
+//             filterElements = document.querySelectorAll('#filter-list li');
+//         filterElements.forEach(item => {
+//             if(item.innerHTML.toLowerCase().indexOf(filter) > -1){
+//                 item.style.display = '';
+//             }
+//             else{
+//                 item.style.display = 'none';
+//             }
+//         })
+//     })
+// };
+// filter();
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// let modal = document.getElementById('myModal');
+// let btn = document.getElementById('myBtn');
+// let close = document.getElementById('close');
+//
+//
+// btn.onclick = function (){
+//     modal.style.display = 'block';
+// }
+//
+// close.onclick = function (){
+//     modal.style.display = 'none';
+// }
+//
+// window.onclick = function (event){
+//     if(event.target == modal){
+//         modal.style.display = 'none';
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
